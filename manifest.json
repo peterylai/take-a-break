@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "Take a Break!",
+  "description": "This extension reminds you to take a 10 minute break every hour",
+  "version": "1.0",
+
+  "icons" : {
+    "128": "icon.png"
+  },
+
+  "permissions": [
+          "tabs",
+          "alarms" 
+  ],
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  }
+}

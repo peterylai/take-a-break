@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Break!</title>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+    <style>
+      body {
+        background: aquamarine;
+        color: slategrey;
+        font-family: 'Josefin Slab';
+        font-size: 68px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Take a Break!</h1>
+    
+    <script>
+      var subtitle = document.createElement('h2');
+      var currentTime = new Date();
+      var tenMinutesLater = new Date(Date.now() + 600000);
+      var instructions = "Step away until " + tenMinutesLater.toLocaleTimeString().replace(/:\d+ /, ' ');
+      subtitle.textContent = instructions;
+      document.body.appendChild(subtitle);
+    </script>
+  </body>
+</html>
+
